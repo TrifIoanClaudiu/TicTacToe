@@ -1,0 +1,84 @@
+body{
+    background-color: #5F7A61;
+    text-align: center;
+}
+h1{
+    color:#B85C38;
+    text-shadow: 2px 2px 5px black;
+    font-size: 300%;
+    margin-top: 0;
+}
+h3{
+   color: #362222;
+   font-size: 180%;
+   text-shadow: 1px 1px 3px black;
+   margin-top: 15px;
+}
+.board {
+    background-color: black;;
+    display: inline-block;
+    position:relative;
+    border: 5px solid black;
+}
+  
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 125px);
+    grid-template-rows: repeat(3, 125px);
+    grid-gap: 5px;
+    box-shadow:rgb(8, 82, 41) 0px 20px 30px -10px;
+    
+}
+  
+.cell {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 550%;
+    font-weight: bold;
+    background: #7FC8A9;
+    color:#444941;
+}
+.cell:hover{
+    transform: perspective(300px) rotateY(-9deg);
+}
+.hoverx:hover{
+    background-color: rgba(232, 180, 180, 0.78);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 550%;
+    font-weight: bold;
+    color:#444941;
+}
+
+.resetButton{
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+    background-color: #5F7A61;
+	border-radius:5px;
+	border:3px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:12px 26px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #16260b;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.resetButton:hover {
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	background-color:#72b352;
+}
+
+.cellContent{
+    font-size: 250%;
+    color:#444941;
+}
